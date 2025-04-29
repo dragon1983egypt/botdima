@@ -1,0 +1,28 @@
+
+def zodiac_sign(message, day, month):
+
+    if month == "декабрь":
+        astro_sign = "Стрелец" if (day < 22) else "Козерог"
+        bot.send_message(message.chat.id, astro_sign)
+    elif month == "январь":
+        astro_sign = "Козерог" if (day < 20) else "Водолей"
+    elif month == "февраль":
+        astro_sign = "Водолей" if (day < 19) else "Рыбы"
+    elif month == "март":
+        astro_sign = "Рыбы" if (day < 21) else "Овен"
+    elif month == "апрель":
+        astro_sign = "Овен" if (day < 20) else "Телец"
+    elif month == "май":
+        astro_sign = "Телец" if (day < 21) else "Близнецы"
+    elif month == "июнь":
+        astro_sign = "Близнецы" if (day < 21) else "Рак"
+    elif month == "июль":
+        astro_sign = "Рак" if (day < 23) else "Лев"
+    elif month == "август":
+        astro_sign = "Лев" if (day < 23) else "Дева"
+    elif month == "сентябрь":
+        astro_sign = "Дева" if (day < 23) else "Весы"
+    elif month == "октябрь":
+        astro_sign = "Весы" if (day < 23) else "Скорпион"
+    elif month == "ноябрь":
+        astro_sign = "Скорпион" if (day < 22) else "Стрелец"
